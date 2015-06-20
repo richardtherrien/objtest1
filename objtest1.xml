@@ -45,12 +45,30 @@
                               </block>
                             </value>
                             <next>
-                              <block type="robot_delay" id="108" inline="true">
-                                <value name="DELAY">
-                                  <block type="math_number" id="115">
-                                    <field name="NUM">200</field>
+                              <block type="oled_drawnumber" id="191" inline="true">
+                                <value name="NUMBER">
+                                  <block type="sensor_object" id="207">
+                                    <field name="OBJECT">LEFTSIDE</field>
                                   </block>
                                 </value>
+                                <next>
+                                  <block type="oled_drawnumber" id="200" inline="true">
+                                    <value name="NUMBER">
+                                      <block type="sensor_object" id="214">
+                                        <field name="OBJECT">RIGHTSIDE</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="robot_delay" id="108" inline="true">
+                                        <value name="DELAY">
+                                          <block type="math_number" id="115">
+                                            <field name="NUM">200</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
                               </block>
                             </next>
                           </block>
