@@ -31,12 +31,21 @@
                       </block>
                     </value>
                     <next>
-                      <block type="robot_delay" id="108" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="115">
-                            <field name="NUM">200</field>
+                      <block type="oled_drawnumber" id="130" inline="true">
+                        <value name="NUMBER">
+                          <block type="sensor_object" id="153">
+                            <field name="OBJECT">RIGHTFRONT</field>
                           </block>
                         </value>
+                        <next>
+                          <block type="robot_delay" id="108" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="115">
+                                <field name="NUM">200</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
                       </block>
                     </next>
                   </block>
